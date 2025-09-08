@@ -1,70 +1,72 @@
-🤖 Geine – A Custom Chatbot (AI Agent)
+<h1 align="center">🤖 Geine – A Custom Chatbot (AI Agent)</h1>
 
-Geine is a custom AI-powered chatbot agent built with LangGraph
-in JavaScript.
-It can chat naturally, browse the internet for real-time information, and remember conversations across sessions.
+<p align="center">
+  <b>Geine</b> is a custom AI-powered chatbot agent built with <a href="https://www.langchain.com/langgraph">LangGraph</a> in JavaScript.  
+  It can chat naturally, browse the internet for real-time information, and remember conversations across sessions.
+</p>
 
-✨ Features
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-43853d?style=for-the-badge&logo=node.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LangGraph-blueviolet?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript&logoColor=black"/>
+</p>
 
-💬 Chat with the Agent – Natural, human-like conversations.
+---
 
-🌐 Web Browsing – Fetches live data from the internet to answer up-to-date queries.
+## ✨ Features
 
-🧠 Memory – Remembers full conversations (long-term + short-term).
+- 💬 **Chat with the Agent** – Natural, human-like conversations
+- 🌐 **Web Browsing** – Fetch live data from the internet
+- 🧠 **Memory** – Remembers conversations (short-term + long-term)
+- 🔄 **Context-Aware Responses** – Maintains context across multiple turns
+- 🛠 **Customizable Tools** – Extend with APIs (weather, finance, etc.)
+- 📂 **Multi-Session Support** – Separate memory per user
+- ⚡ **Fast & Scalable** – Optimized with LangGraph
 
-🔄 Context-Aware Responses – Maintains context between multiple turns.
+---
 
-🛠 Customizable Tools – Extend with APIs (weather, finance, search, etc.).
+## 🛠 Tech Stack
 
-📂 Multi-Session Support – Each user can have separate memory sessions.
+| Layer        | Technology                                                          |
+| ------------ | ------------------------------------------------------------------- |
+| **Core**     | [LangGraph](https://github.com/langchain-ai/langgraph) (JavaScript) |
+| **Models**   | OpenAI GPT • Anthropic Claude • Local LLMs                          |
+| **Browsing** | Puppeteer • Playwright • LangChain Tools                            |
+| **Memory**   | LangGraph Memory • Redis • Vector DB (Pinecone, Weaviate, Chroma)   |
+| **Backend**  | Node.js + Express / TypeScript + Express                            |
+| **Database** | MongoDB • PostgreSQL                                                |
+| **Deploy**   | Vercel • Railway • Docker                                           |
 
-⚡ Fast & Scalable – Designed for efficiency with LangGraph.
+---
 
-🛠 Tech Stack
+## 🚀 Getting Started
 
-Core Framework: LangGraph
-(JavaScript)
+```bash
+# 1. Clone the repo
+git clone https://github.com/rishabhdamle/Geine.git
+cd Geine
 
-Language Models: OpenAI GPT / Anthropic Claude / Local LLMs (via LangChain integration)
-
-Web Browsing: Puppeteer / Playwright / LangChain Tools
-
-Memory: LangGraph Persistent Memory / Redis / Vector Database (Pinecone, Weaviate, or Chroma)
-
-Backend: Node.js + Express / Typescript + Express
-
-Database: MongoDB / PostgreSQL (for user sessions & memory)
-
-Deployment: Vercel / Railway / Docker
-
-🚀 Getting Started
-
-1. Clone the repo
-   git clone https://github.com/rishabhdamle/Geine.git
-   cd Geine
-
-2. Install dependencies
-   npm install
+# 2. Install dependencies
+npm install
 
 3. Set environment variables
 
 Create a .env file:
-
 OPENAI_API_KEY=your_openai_api_key
 BROWSER_API_KEY=your_browser_api_key
 DB_URI=your_database_uri
 
 4. Run the app
-   npm run dev
+npm run dev
 
 📂 Project Structure
 geine-chatbot/
 │── src/
-│ ├── agents/ # AI agent logic
-│ ├── memory/ # Conversation memory
-│ ├── tools/ # Browsing & external APIs
-│ ├── routes/ # API endpoints
-│ └── index.js # Entry point
+│   ├── agents/    # AI agent logic
+│   ├── memory/    # Conversation memory
+│   ├── tools/     # Browsing & external APIs
+│   ├── routes/    # API endpoints
+│   └── index.js   # Entry point
 │── package.json
 │── README.md
 
@@ -72,12 +74,19 @@ geine-chatbot/
 
 🎙 Voice Interaction (speech-to-text & text-to-speech)
 
-🖼 Image Understanding (vision support for multimodal queries)
+🖼 Image Understanding (multimodal support)
 
-🔌 Plugin Ecosystem (integrate third-party APIs easily)
+🔌 Plugin Ecosystem (3rd-party integrations)
 
-📱 Frontend UI (React / Next.js interface for chat)
+📱 React / Next.js frontend for chat
 
 🤝 Contributing
 
-Contributions are welcome! Feel free to open issues and pull requests.
+Contributions are welcome!
+Open an issue or submit a pull request to collaborate.
+
+📜 License
+
+Licensed under the MIT License – free to use & modify.
+
+```
